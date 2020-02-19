@@ -6,9 +6,11 @@
 const body = document.querySelector("body");
 const which = document.getElementById("which");
 const code = document.getElementById("code");
+const display = document.getElementById("display");
 
 body.addEventListener("keydown", event => {
   which.textContent = event.which;
+  display.textContent = event.which;
 });
 
 body.addEventListener("keydown", event => {
